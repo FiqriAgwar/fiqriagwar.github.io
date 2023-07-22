@@ -412,7 +412,7 @@ a {
 }
 
 a:hover {
-  color: #e27689;
+  color: #9d2ef1;
   border-bottom-color: rgba(255, 255, 255, 0);
 }
 
@@ -2275,6 +2275,16 @@ button:active,
 
 .icon.brands:before {
   font-family: "Font Awesome 5 Brands";
+}
+
+.icon.large:before {
+  font-weight: 900;
+  font-size: 90px;
+}
+
+.icon.large.brands:before {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 90px;
 }
 
 /* Header */
