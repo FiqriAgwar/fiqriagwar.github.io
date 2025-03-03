@@ -10,6 +10,13 @@ export const metadata = {
   title: "Aliffiqri Agwar - Software Engineer & Many More",
   description:
     "Portfolio showcasing software engineering skills, and other expertise of Aliffiqri Agwar",
+    icons: [
+      {
+        rel: "icon",
+        type: "image",
+        url: "/images/abouts/profpic.jpg",
+      },
+    ],
 }
 
 export default function RootLayout({
