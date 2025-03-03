@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { ChevronDown } from "lucide-react"
-import { DarkModeToggle } from "./DarkModeToggle"
+import { useState } from "react";
+import Link from "next/link";
+import { ChevronDown } from "lucide-react";
+import { DarkModeToggle } from "./DarkModeToggle";
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-lg">
@@ -43,7 +43,10 @@ const Navigation = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/video-editing" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+                      <Link
+                        href="/video-editing"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+                      >
                         Video Editing
                       </Link>
                     </li>
@@ -59,12 +62,18 @@ const Navigation = () => {
                 )}
               </li>
               <li>
-                <Link href="/about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <Link
+                  href="/about"
+                  className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <Link
+                  href="/contact"
+                  className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -74,8 +83,7 @@ const Navigation = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navigation
-
+export default Navigation;

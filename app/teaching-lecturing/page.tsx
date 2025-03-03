@@ -1,6 +1,5 @@
-import { Timeline } from "@/components/Timeline"
-import { teachingExp } from "@/constants/workExperiences"
-
+import { Timeline } from "@/components/Timeline";
+import { teachingExp } from "@/constants/workExperiences";
 
 export default function TeachingLecturing() {
   return (
@@ -12,6 +11,5 @@ export default function TeachingLecturing() {
         <Timeline items={teachingExp} />
       </section>
     </div>
-  )
+  );
 }
-

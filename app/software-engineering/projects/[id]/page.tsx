@@ -1,15 +1,19 @@
-import { notFound } from "next/navigation"
-import Image from "next/image"
-import { skillIcons } from "@/constants/skills"
-import { projectDetails } from "@/constants/projects"
-import { ZoomableImage } from "@/components/ZoomableImage"
-import { SRC_DEFAULT_PROJECT_IMG } from "@/constants"
+import { notFound } from "next/navigation";
+import Image from "next/image";
+import { skillIcons } from "@/constants/skills";
+import { projectDetails } from "@/constants/projects";
+import { ZoomableImage } from "@/components/ZoomableImage";
+import { SRC_DEFAULT_PROJECT_IMG } from "@/constants";
+
+export function generateStaticParams() {
+  return Object.keys(projectDetails).map((id) => ({ id }));
+}
 
 export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projectDetails[params.id as keyof typeof projectDetails]
+  const project = projectDetails[params.id as keyof typeof projectDetails];
 
   if (!project) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -39,13 +43,18 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           <h1 className="text-3xl font-bold">{project.title}</h1>
           <div className="flex flex-wrap gap-2">
             {project.skills.map((skill) => {
-              const Icon = skillIcons[skill as keyof typeof skillIcons] || skillIcons.Javascript
+              const Icon =
+                skillIcons[skill as keyof typeof skillIcons] ||
+                skillIcons.Javascript;
               return (
-                <span key={skill} className="px-3 py-1 bg-gray-700 text-white rounded-full text-sm flex items-center">
+                <span
+                  key={skill}
+                  className="px-3 py-1 bg-gray-700 text-white rounded-full text-sm flex items-center"
+                >
                   <Icon className="mr-1" />
                   {skill}
                 </span>
-              )
+              );
             })}
           </div>
           <div className="space-y-2">
@@ -67,7 +76,9 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
       {project.sections.map((section, index) => (
         <div key={index} className="space-y-4">
           <h2 className="text-2xl font-semibold">{section.title}</h2>
-          {section.type === "text" && <p className="text-gray-300">{section.contents}</p>}
+          {section.type === "text" && (
+            <p className="text-gray-300">{section.contents}</p>
+          )}
           {section.type === "list" && section.contents && (
             <ul className="list-disc list-inside">
               {section.contents.map((content, contentIndex) => (
@@ -107,6 +118,5 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         </div>
       ))}
     </div>
-  )
+  );
 }
-

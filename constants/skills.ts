@@ -1,9 +1,28 @@
-import { FaPython, FaAws, FaReact, FaNodeJs, FaJs, FaJava } from "react-icons/fa"
-import { SiLua, SiRobloxstudio, SiTensorflow, SiRedis, SiSolidity, SiEthereum, SiMongodb, SiExpress, SiCocos, SiTypescript, SiJest, SiNextdotjs } from "react-icons/si"
+import {
+  FaPython,
+  FaAws,
+  FaReact,
+  FaNodeJs,
+  FaJs,
+  FaJava,
+} from "react-icons/fa";
+import {
+  SiLua,
+  SiRobloxstudio,
+  SiTensorflow,
+  SiRedis,
+  SiSolidity,
+  SiEthereum,
+  SiMongodb,
+  SiExpress,
+  SiCocos,
+  SiTypescript,
+  SiJest,
+  SiNextdotjs,
+} from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
-import { BsUnity } from "react-icons/bs"
+import { BsUnity } from "react-icons/bs";
 import { RiSupabaseLine } from "react-icons/ri";
-
 
 export const skillIcons = {
   Python: FaPython,
@@ -30,5 +49,5 @@ export const skillIcons = {
   SmartFoxServer: FaJava,
   Java: FaJava,
   Lua: SiLua,
-  RobloxStudio: SiRobloxstudio
-}
+  RobloxStudio: SiRobloxstudio,
+};

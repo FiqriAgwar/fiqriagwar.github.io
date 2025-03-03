@@ -1,34 +1,36 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { ChevronDown, ChevronUp, ExternalLink } from "lucide-react"
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
 
 interface DescriptionItem {
-  text: string
-  subitems?: string[]
+  text: string;
+  subitems?: string[];
 }
 
 interface TimelineItem {
-  title: string
-  company: string
-  companyLogo: string | null
-  period: string
-  description: DescriptionItem[]
-  externalLink?: string
+  title: string;
+  company: string;
+  companyLogo: string | null;
+  period: string;
+  description: DescriptionItem[];
+  externalLink?: string;
 }
 
 interface TimelineProps {
-  items: TimelineItem[]
+  items: TimelineItem[];
 }
 
 export function Timeline({ items }: TimelineProps) {
-  const [expandedItems, setExpandedItems] = useState<number[]>([])
+  const [expandedItems, setExpandedItems] = useState<number[]>([]);
 
   const toggleItem = (index: number) => {
-    setExpandedItems((prev) => (prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]))
-  }
+    setExpandedItems((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+    );
+  };
 
   return (
     <div className="relative border-l border-gray-700 ml-3">
@@ -55,12 +57,14 @@ export function Timeline({ items }: TimelineProps) {
           </span>
           <div className="ml-8">
             <h3 className="flex items-center mb-1 text-lg font-semibold text-2x1">
-              {item.title} 
+              {item.title}
             </h3>
             <h4 className="flex items-center mb-1 text-sm font-semibold text-2x1">
               {item.company ?? ""}
             </h4>
-            <time className="block mb-2 text-sm font-normal leading-none text-gray-400">{item.period}</time>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400">
+              {item.period}
+            </time>
             <div className="flex items-center space-x-4">
               <button
                 onClick={() => toggleItem(index)}
@@ -112,6 +116,5 @@ export function Timeline({ items }: TimelineProps) {
         </div>
       ))}
     </div>
-  )
+  );
 }
-

@@ -1,6 +1,5 @@
-import { Timeline } from "@/components/Timeline"
-import { esportsExp } from "@/constants/workExperiences"
-
+import { Timeline } from "@/components/Timeline";
+import { esportsExp } from "@/constants/workExperiences";
 
 export default function EsportsBroadcasting() {
   return (
@@ -12,6 +11,5 @@ export default function EsportsBroadcasting() {
         <Timeline items={esportsExp} />
       </section>
     </div>
-  )
+  );
 }
-

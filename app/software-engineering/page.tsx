@@ -1,7 +1,7 @@
-import { Timeline } from "@/components/Timeline"
-import { ProjectGrid } from "@/components/ProjectGrid"
-import { softwareEngineerExp } from "@/constants/workExperiences"
-import { professionalProjects, personalProjects } from "@/constants/projects"
+import { Timeline } from "@/components/Timeline";
+import { ProjectGrid } from "@/components/ProjectGrid";
+import { softwareEngineerExp } from "@/constants/workExperiences";
+import { professionalProjects, personalProjects } from "@/constants/projects";
 
 export default function SoftwareEngineering() {
   return (
@@ -23,6 +23,5 @@ export default function SoftwareEngineering() {
         <ProjectGrid projects={personalProjects} />
       </section>
     </div>
-  )
+  );
 }
-

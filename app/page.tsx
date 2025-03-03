@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { secondaryPortfolios } from "@/constants/portfolios"
+import Link from "next/link";
+import { secondaryPortfolios } from "@/constants/portfolios";
 
 export default function Home() {
   return (
@@ -10,36 +10,36 @@ export default function Home() {
           A software engineer who loves to explore.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-        <Link
-          href="/software-engineering"
-          className="px-6 py-3 bg-blue-600 text-white dark:text-gray-100 rounded-md transition-colors inline-block mb-12 hover:bg-blue-700"
-        >
-          View Software Engineering Portfolio
-        </Link>
-        <Link
-          href="https://drive.google.com/file/d/1LGky7Fij7WLj_PVYp8K7MlDopCOXDZWo/view?usp=drive_link"
-          className="px-6 py-3 bg-blue-600 text-white dark:text-gray-100 rounded-md transition-colors inline-block mb-12 hover:bg-blue-700"
-        >
-          View Resume
-        </Link>
+          <Link
+            href="/software-engineering"
+            className="px-6 py-3 bg-blue-600 text-white dark:text-gray-100 rounded-md transition-colors inline-block mb-12 hover:bg-blue-700"
+          >
+            View Software Engineering Portfolio
+          </Link>
+          <Link
+            href="https://drive.google.com/file/d/1LGky7Fij7WLj_PVYp8K7MlDopCOXDZWo/view?usp=drive_link"
+            className="px-6 py-3 bg-blue-600 text-white dark:text-gray-100 rounded-md transition-colors inline-block mb-12 hover:bg-blue-700"
+          >
+            View Resume
+          </Link>
         </div>
-        
       </div>
       <div className="w-full max-w-2xl">
-        <h2 className="text-2xl font-semibold mb-6 text-center">Other Skills</h2>
+        <h2 className="text-2xl font-semibold mb-6 text-center">
+          Other Skills
+        </h2>
         <div className="flex flex-wrap justify-center gap-4">
           {secondaryPortfolios.map((portfolio) => (
             <Link
-            key={portfolio.title}
-            href={portfolio.href}
-            className={`px-6 py-3 bg-blue-600 text-white dark:text-gray-100 rounded-md transition-colors inline-block mb-12 ${portfolio.color}`}
-          >
-            {portfolio.title}
-          </Link>
+              key={portfolio.title}
+              href={portfolio.href}
+              className={`px-6 py-3 bg-blue-600 text-white dark:text-gray-100 rounded-md transition-colors inline-block mb-12 ${portfolio.color}`}
+            >
+              {portfolio.title}
+            </Link>
           ))}
         </div>
       </div>
     </div>
-  )
+  );
 }
-

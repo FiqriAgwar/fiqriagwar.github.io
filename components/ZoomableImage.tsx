@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
+import { useState } from "react";
+import Image from "next/image";
 
 interface ZoomableImageProps {
-  src: string
-  alt: string
-  width: number
-  height: number
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
 }
 
 export function ZoomableImage({ src, alt, width, height }: ZoomableImageProps) {
-  const [isZoomed, setIsZoomed] = useState(false)
+  const [isZoomed, setIsZoomed] = useState(false);
 
   return (
     <>
@@ -40,6 +40,5 @@ export function ZoomableImage({ src, alt, width, height }: ZoomableImageProps) {
         </div>
       )}
     </>
-  )
+  );
 }
-
