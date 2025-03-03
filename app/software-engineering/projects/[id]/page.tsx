@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { skillIcons } from "@/constants/skills";
 import { projectDetails } from "@/constants/projects";
 import { ZoomableImage } from "@/components/ZoomableImage";
