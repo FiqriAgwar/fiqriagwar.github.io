@@ -24,6 +24,7 @@ const nextConfig = {
   },
   basePath: "",
   trailingSlash: true,
+  distDir: "dist"
 };
 
 mergeConfig(nextConfig, userConfig);
