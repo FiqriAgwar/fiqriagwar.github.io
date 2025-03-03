@@ -22,7 +22,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/fiqriagwar.github.io",
+  basePath: "",
   trailingSlash: true,
 };
 
