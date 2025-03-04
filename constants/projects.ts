@@ -97,7 +97,42 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
     projectLength: "Nov 2024 (1 month)",
     brief:
       "A freelance project for Ministry of Environment and Forestry Event.",
-    sections: [],
+    sections: [
+      {
+        type: "gallery",
+        title: "Galleries",
+        items: [
+          {
+            type: "image",
+            src: "/images/projects/klhk-waspadahutan/waspadahutanmain.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/klhk-waspadahutan/waspadahutanftue1.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/klhk-waspadahutan/waspadahutanftue2.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/klhk-waspadahutan/waspadahutanlevel.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/klhk-waspadahutan/waspadahutanover.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/klhk-waspadahutan/waspadahutanlbgame.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/klhk-waspadahutan/waspadahutanlbmenu.png",
+          },
+        ]
+      }
+    ],
     skills: ["Unity", "C#"],
   },
   [PROJECT.ANJIR_CINDUAMATO]: {
@@ -294,12 +329,73 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
     title: "Me, You & Our Dream",
     type: "Personal",
     category: "Platformer, Unity, 2D",
-    thumbnail: "",
+    thumbnail: "/images/projects/anjir-meyoudream/myd.png",
     studio: "Another Joyful In Rain",
     platform: "PC",
     projectLength: "Oct 2018 - Nov 2018 (2 months)",
     brief: "",
-    sections: [],
+    sections: [{
+      type: "gallery",
+      title: "Galleries",
+      items: [
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydmain.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydsetting.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydcs11.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydcs12.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydcs13.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydtutorial1.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydtutorial2.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydtutorial3.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydtutorial4.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydtutorial5.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydlevel.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydcs21.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydcs22.png",
+        },
+        {
+          type: "image",
+          src: "/images/projects/anjir-meyoudream/mydcs23.png",
+        },
+      ],
+    },],
     skills: ["Unity", "C#"],
   },
   [PROJECT.INDIE_ROBLOXBRIDGE]: {

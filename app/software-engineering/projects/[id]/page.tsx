@@ -89,31 +89,31 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
             </ul>
           )}
           {section.type === "gallery" && section.items && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {section.items.map((item, itemIndex) => (
-                <div key={itemIndex} className="w-full h-64">
-                  {item.type === "image" ? (
-                    <ZoomableImage
-                      src={item.src || "/placeholder.svg"}
-                      alt={`${section.title} image ${itemIndex + 1}`}
-                      width={800}
-                      height={600}
-                    />
-                  ) : (
-                    <iframe
-                      width="100%"
-                      height="100%"
-                      src={`https://www.youtube.com/embed/${item.youtubeId}`}
-                      title={`${section.title} video ${itemIndex + 1}`}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="rounded-lg"
-                    ></iframe>
-                  )}
-                </div>
-              ))}
-            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+            {section.items.map((item, itemIndex) => (
+              <div key={itemIndex} className="w-full h-50 flex items-center justify-center">
+                {item.type === "image" ? (
+                  <ZoomableImage
+                    src={item.src || "/placeholder.svg"}
+                    alt={`${section.title} image ${itemIndex + 1}`}
+                    width={800}
+                    height={600}
+                  />
+                ) : (
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={`https://www.youtube.com/embed/${item.youtubeId}`}
+                    title={`${section.title} video ${itemIndex + 1}`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="rounded-lg aspect-video"
+                  ></iframe>
+                )}
+              </div>
+            ))}
+          </div>
           )}
         </div>
       ))}
