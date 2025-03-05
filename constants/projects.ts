@@ -24,8 +24,16 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
         title: "Gallery",
         type: "gallery",
         items: [
-          { type: "image", src: "" },
-          { type: "video", youtubeId: "" },
+          { type: "video", src: "images/projects/shopee-bubble/pzb-bot.mp4" },
+          {
+            type: "video",
+            src: "images/projects/shopee-bubble/pzb-pinata.mp4",
+          },
+          {
+            type: "video",
+            src: "images/projects/shopee-bubble/pzb-sagamap.mp4",
+          },
+          { type: "video", src: "images/projects/shopee-bubble/pzb-tq.mp4" },
         ],
       },
     ],
@@ -41,7 +49,18 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
     platform: "Android, iOS",
     projectLength: "Jan 2024 - Dec 2024 (1 year)",
     brief: "",
-    sections: [],
+    sections: [
+      {
+        title: "Gallery",
+        type: "gallery",
+        items: [
+          {
+            type: "video",
+            src: "images/projects/shopee-cocoki/tm-milestone.mp4",
+          },
+        ],
+      },
+    ],
     skills: ["Cocos Creator", "Typescript"],
   },
   [PROJECT.KLHK_GROWGREEN]: {
@@ -130,8 +149,8 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
             type: "image",
             src: "/images/projects/klhk-waspadahutan/waspadahutanlbmenu.png",
           },
-        ]
-      }
+        ],
+      },
     ],
     skills: ["Unity", "C#"],
   },
@@ -334,68 +353,70 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
     platform: "PC",
     projectLength: "Oct 2018 - Nov 2018 (2 months)",
     brief: "",
-    sections: [{
-      type: "gallery",
-      title: "Galleries",
-      items: [
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydmain.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydsetting.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydcs11.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydcs12.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydcs13.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydtutorial1.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydtutorial2.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydtutorial3.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydtutorial4.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydtutorial5.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydlevel.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydcs21.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydcs22.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/anjir-meyoudream/mydcs23.png",
-        },
-      ],
-    },],
+    sections: [
+      {
+        type: "gallery",
+        title: "Galleries",
+        items: [
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydmain.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydsetting.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydcs11.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydcs12.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydcs13.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydtutorial1.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydtutorial2.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydtutorial3.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydtutorial4.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydtutorial5.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydlevel.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydcs21.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydcs22.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/anjir-meyoudream/mydcs23.png",
+          },
+        ],
+      },
+    ],
     skills: ["Unity", "C#"],
   },
   [PROJECT.INDIE_ROBLOXBRIDGE]: {
