@@ -11,4 +11,5 @@ export enum PROJECT {
   ANJIR_MEYOUDREAM = "anjir_meyoudream",
   INDIE_ROBLOXBRIDGE = "indie_robloxbridge",
   INDIE_WHACKAMOLE = "indie_whackamole",
+  INDIE_WHATDOESITHUMAN = "indie_whatdoesithuman"
 }
