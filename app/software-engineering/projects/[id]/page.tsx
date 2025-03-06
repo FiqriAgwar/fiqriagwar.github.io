@@ -102,14 +102,12 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                       width={800}
                       height={600}
                     />
-                  ) : (
+                  ) : item.youtubeId ? (
                     <iframe
                       width="100%"
                       height="100%"
                       src={
-                        item.youtubeId
-                          ? `https://www.youtube.com/embed/${item.youtubeId}`
-                          : item.src
+                          `https://www.youtube.com/embed/${item.youtubeId}`
                       }
                       title={`${section.title} video ${itemIndex + 1}`}
                       frameBorder="0"
@@ -117,6 +115,10 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                       allowFullScreen
                       className="rounded-lg aspect-video"
                     ></iframe>
+                  ) : (
+                    <video key={item.src} src={item.src} controls className="rounded-lg w-full h-auto">
+                      Your browser does not support the video tag.
+                    </video>
                   )}
                 </div>
               ))}

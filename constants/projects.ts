@@ -24,16 +24,16 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
         title: "Gallery",
         type: "gallery",
         items: [
-          { type: "video", src: "images/projects/shopee-bubble/pzb-bot.mp4" },
+          { type: "video", src: "/images/projects/shopee-bubble/pzb-bot.mp4" },
           {
             type: "video",
-            src: "images/projects/shopee-bubble/pzb-pinata.mp4",
+            src: "/images/projects/shopee-bubble/pzb-pinata.mp4",
           },
           {
             type: "video",
-            src: "images/projects/shopee-bubble/pzb-sagamap.mp4",
+            src: "/images/projects/shopee-bubble/pzb-sagamap.mp4",
           },
-          { type: "video", src: "images/projects/shopee-bubble/pzb-tq.mp4" },
+          { type: "video", src: "/images/projects/shopee-bubble/pzb-tq.mp4" },
         ],
       },
     ],
@@ -56,7 +56,7 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
         items: [
           {
             type: "video",
-            src: "images/projects/shopee-cocoki/tm-milestone.mp4",
+            src: "/images/projects/shopee-cocoki/tm-milestone.mp4",
           },
         ],
       },

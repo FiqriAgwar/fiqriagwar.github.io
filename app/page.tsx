@@ -40,6 +40,11 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <div className="text-center mb-12">
+        <p className="text-sm mb-8 max-w-2xl">
+          This whole portfolio is still under construction, but you may explore around
+        </p>
+      </div>
     </div>
   );
 }
