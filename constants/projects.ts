@@ -34,6 +34,8 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
             src: "/images/projects/shopee-bubble/pzb-sagamap.mp4",
           },
           { type: "video", src: "/images/projects/shopee-bubble/pzb-tq.mp4" },
+          { type: "video", src: "/images/projects/shopee-bubble/pzb-boss.mp4" },
+          { type: "image", src: "/images/projects/shopee-bubble/pzb-ko.png" },
         ],
       },
     ],
