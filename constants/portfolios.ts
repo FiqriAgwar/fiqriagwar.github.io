@@ -2,16 +2,19 @@ export const secondaryPortfolios = [
   {
     title: "Teaching & Lecturing",
     href: "/teaching-lecturing",
-    color: "bg-green-600 hover:bg-green-700",
+    bgColor: "bg-green-600",
+    hoverColor: "hover:bg-green-700",
   },
   {
     title: "Video Editing",
     href: "/video-editing",
-    color: "bg-red-600 hover:bg-red-700",
+    bgColor: "bg-red-600",
+    hoverColor: "hover:bg-red-700",
   },
   {
     title: "Esports Broadcasting",
     href: "/esports-broadcasting",
-    color: "bg-purple-600 hover:bg-purple-700",
+    bgColor: "bg-purple-600",
+    hoverColor: "hover:bg-purple-700",
   },
 ];

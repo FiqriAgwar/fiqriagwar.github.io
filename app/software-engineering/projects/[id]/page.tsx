@@ -20,7 +20,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
     <div className="max-w-6xl mx-auto space-y-8 px-4">
       {/* Top section with thumbnail and project details */}
       <div className="flex flex-col lg:flex-row gap-8 items-start">
-        <div className="w-full lg:w-1/3 space-y-4">
+        <div className="w-full lg:w-1/2 space-y-4">
           <Image
             src={project.thumbnail || SRC_DEFAULT_PROJECT_IMG}
             alt={project.title}
@@ -39,7 +39,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
             </a>
           )}
         </div>
-        <div className="w-full lg:w-1/3 space-y-4">
+        <div className="w-full lg:w-2/3 space-y-4">
           <h1 className="text-3xl font-bold">{project.title}</h1>
           <div className="flex flex-wrap gap-2">
             {project.skills.map((skill) => {

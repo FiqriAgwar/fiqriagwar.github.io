@@ -63,14 +63,6 @@ const Navigation = () => {
               </li>
               <li>
                 <Link
-                  href="/about"
-                  className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/contact"
                   className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >

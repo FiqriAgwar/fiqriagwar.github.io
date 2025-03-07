@@ -1,3 +1,5 @@
+import { FaGithub, FaItchIo, FaLinkedin } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 py-8">
@@ -14,13 +16,19 @@ const Footer = () => {
               href="https://www.linkedin.com/in/aliffiqri-agwar/"
               className="hover:text-blue-400 transition-colors"
             >
-              LinkedIn
+              <FaLinkedin />
             </a>
             <a
               href="https://github.com/FiqriAgwar"
               className="hover:text-blue-400 transition-colors"
             >
-              GitHub
+              <FaGithub />
+            </a>
+            <a
+              href="https://sorrowisme.itch.io"
+              className="hover:text-blue-400 transition-colors"
+            >
+              <FaItchIo />
             </a>
           </div>
         </div>
