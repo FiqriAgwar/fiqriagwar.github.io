@@ -6,10 +6,10 @@ export enum PROJECT {
   ANJIR_CINDUAMATO = "anjir_cinduamato",
   APAYA_PATTOCATTO = "apaya_pattocatto",
   INDIE_AUCTIONWEB = "indie_auctionweb",
-  INDIE_DOTASTORE = "indie_dotastore",
+  //   INDIE_DOTASTORE = "indie_dotastore",
   INDIE_ELECTRIC = "indie_electric",
   ANJIR_MEYOUDREAM = "anjir_meyoudream",
   INDIE_ROBLOXBRIDGE = "indie_robloxbridge",
   INDIE_WHACKAMOLE = "indie_whackamole",
-  INDIE_WHATDOESITHUMAN = "indie_whatdoesithuman"
+  INDIE_WHATDOESITHUMAN = "indie_whatdoesithuman",
 }

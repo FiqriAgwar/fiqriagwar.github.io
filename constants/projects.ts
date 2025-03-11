@@ -18,7 +18,34 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
       {
         title: "Summary of Contribution",
         type: "list",
-        contents: [""],
+        contents: [
+          "Lead the game engineer team for one major version (tournament)",
+          "Added new gameplay logic for tournament event",
+          "Added bot system for tournament event",
+          "Optimized asset workflow and usage in the game",
+          'Added physics "Pachinko" mechanic for pinata party event',
+          "Worked with FaaS (function as a service) to give a proxy for level auto generation",
+          "Added snippets for star collector event",
+          "Added fireworks gameplay mechanic",
+          "Added fireworks animation with simple particle system",
+          "Set UI for group race event scene",
+          "Fixed and optimized saga map scrolling issue",
+          "Adjusted saga map for level selector scene to provide new level type (boss battle)",
+          "Updated pop up template to afford background and header component flexibility",
+          "Implemented UI revival pop up for different occassion (multiple revival, boss level)",
+          "Implemented boss attack mechanic",
+          "Added minor UI components for some events (knockout stage, monster raid)",
+          "Added first time user experience (FTUE) for weekly contest and tournament event",
+          "Connected UI component for advertisement service for different occassion (treasure quest, boss level)",
+          "Set up library usage to afford iOS runtime environtment",
+        ],
+      },
+      {
+        title: "Achievements",
+        type: "list",
+        contents: [
+          "Successfully managed assets workflow and reduced loadtime by 2 seconds (15% load time at that time)",
+        ],
       },
       {
         title: "Gallery",
@@ -53,6 +80,14 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
     brief: "",
     sections: [
       {
+        title: "Summary of Contribution",
+        type: "list",
+        contents: [
+          "Worked with tournament reward UI components",
+          "Integrate atlas assets with the UI components",
+        ],
+      },
+      {
         title: "Gallery",
         type: "gallery",
         items: [
@@ -78,6 +113,15 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
     brief:
       "A freelance project for Ministry of Environment and Forestry Event.",
     sections: [
+      {
+        title: "Features",
+        type: "list",
+        contents: [
+          "Skill check system for growing the plant",
+          "Gameplay flow from seed to mature plant",
+          "Main scene like main menu and level scene",
+        ],
+      },
       {
         type: "gallery",
         title: "Galleries",
@@ -119,6 +163,18 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
     brief:
       "A freelance project for Ministry of Environment and Forestry Event.",
     sections: [
+      {
+        title: "Features",
+        type: "list",
+        contents: [
+          "Input system for touch screen",
+          "Spawn system with randomized foes and allies",
+          "Score and health system",
+          "Difficulty increaase overtime system",
+          "Local leaderboard system",
+          "Main scene like main menu scene, level scene and leaderboard scene",
+        ],
+      },
       {
         type: "gallery",
         title: "Galleries",
@@ -168,6 +224,15 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
     projectLength: "Mar 2020 - Jun 2020 (4 months)",
     brief: "",
     sections: [
+      {
+        title: "Summary of Contribution",
+        type: "list",
+        contents: [
+          "Input system",
+          "Basic animation",
+          "Physics system when combat",
+        ],
+      },
       {
         type: "gallery",
         title: "Galleries",
@@ -242,6 +307,15 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
         ],
       },
       {
+        title: "Summary of Contribution",
+        type: "list",
+        contents: [
+          "Input system (differentation of patting and tapping)",
+          "Score and spawn system for each cat and dog",
+          "Gallery UI and local record system",
+        ],
+      },
+      {
         title: "Achievement",
         type: "text",
         contents: [
@@ -297,13 +371,23 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
     id: PROJECT.INDIE_WHACKAMOLE,
     title: "Two-Player Whack-a-mole",
     type: "Personal",
-    category: "Arcade, Multiplayer, Unity, 3D",
+    category: "Arcade, Multiplayer, Unity, 3D, Prototype",
     thumbnail: "/images/projects/indie-whackamole/wam-init.png",
     studio: "Personal Project",
     platform: "PC",
     projectLength: "Jan 2025 (2 weeks)",
     brief: "",
     sections: [
+      {
+        title: "Features",
+        type: "list",
+        contents: [
+          "Input system",
+          "Hit mechanic using RPC",
+          "Score system and update using SmartFoxServer",
+          "Server built with room system using SmartFoxServer",
+        ],
+      },
       {
         type: "gallery",
         title: "Galleries",
@@ -343,65 +427,115 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
     platform: "PC",
     projectLength: "Feb, Aug, Sep 2020 (3 months)",
     brief: "",
-    sections: [{
-      type: "gallery",
-      title: "Galleries",
-      items: [
-        {
-          type: "image",
-          src: "/images/projects/indie-human/human-main.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/indie-human/human-level1.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/indie-human/human-level1res.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/indie-human/human-level1foes.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/indie-human/human-level2intro.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/indie-human/human-level2mid.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/indie-human/human-level2choice.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/indie-human/human-level3init.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/indie-human/human-level4intro.png",
-        },
-        {
-          type: "image",
-          src: "/images/projects/indie-human/human-level4choice.png",
-        },
-      ]
-    }],
+    sections: [
+      {
+        title: "Summary of Contribution (basically all of the game mechanics)",
+        type: "list",
+        contents: [
+          "Input system (follow the cursor)",
+          "Simple physics2D collision for scoring",
+          "Visual novel dialogue and branching system",
+          "Audio and UI management",
+        ],
+      },
+      {
+        title: "Achievements",
+        type: "list",
+        contents: [
+          "1st prize in ITB's Pra-Gemastik competition",
+          "Submitted as the game developement branch in Gemastik Competition",
+        ],
+      },
+      {
+        title: "Summary of Contribution (basically all of the game mechanics)",
+        type: "list",
+        contents: [
+          "Input system (follow the cursor)",
+          "Simple physics2D collision for scoring",
+          "Visual novel dialogue and branching system",
+          "Audio and UI management",
+        ],
+      },
+      {
+        type: "gallery",
+        title: "Galleries",
+        items: [
+          {
+            type: "image",
+            src: "/images/projects/indie-human/human-main.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/indie-human/human-level1.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/indie-human/human-level1res.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/indie-human/human-level1foes.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/indie-human/human-level2intro.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/indie-human/human-level2mid.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/indie-human/human-level2choice.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/indie-human/human-level3init.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/indie-human/human-level4intro.png",
+          },
+          {
+            type: "image",
+            src: "/images/projects/indie-human/human-level4choice.png",
+          },
+        ],
+      },
+    ],
     skills: ["Unity", "C#"],
   },
   [PROJECT.INDIE_ELECTRIC]: {
     id: PROJECT.INDIE_ELECTRIC,
     title: "Electric Lab",
     type: "Personal",
-    category: "Simulation, Unity, 3D, Electrical Physics",
+    category:
+      "Simulation, Unity, 3D, Electrical Physics, Blender, React, Express.js",
     thumbnail: "/images/projects/indie-electric/1.jpg",
     studio: "Personal Project",
     platform: "PC",
     projectLength: "Aug 2020 - Jun 2021 (1 year)",
     brief: "",
     sections: [
+      {
+        title: "Features",
+        type: "list",
+        contents: [
+          "Designed and built my own 3D model for simulation",
+          "Electric physics calculation for each individual virtual electrical component and as a whole system",
+          "Connecting system between each virtual electrical component",
+          "API for leaderboard and grading system with Express.JS",
+          "Dashboard for the teacher with React",
+        ],
+      },
+      {
+        title: "Achievements",
+        type: "list",
+        contents: [
+          "Graded satisfactory as final project",
+          "Successfully used as a grading method in experiment section because of COVID 19 pandemic",
+        ],
+      },
       {
         type: "gallery",
         title: "Galleries",
@@ -434,6 +568,16 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
     projectLength: "Oct 2018 - Nov 2018 (2 months)",
     brief: "",
     sections: [
+      {
+        title: "Summary of Contribution",
+        type: "list",
+        contents: [
+          "Game mechanic design",
+          "Level design",
+          "Scene management",
+          "Physics system",
+        ],
+      },
       {
         type: "gallery",
         title: "Galleries",
@@ -508,19 +652,6 @@ export const projectDetails: Record<PROJECT, ProjectDetail> = {
     studio: "Personal Project",
     platform: "Web Browser",
     projectLength: "Feb 2025 (1 week)",
-    brief: "",
-    sections: [],
-    skills: ["NextJS", "React", "Supabase"],
-  },
-  [PROJECT.INDIE_DOTASTORE]: {
-    id: PROJECT.INDIE_DOTASTORE,
-    title: "Dota2 Local Skin Store",
-    type: "Personal",
-    category: "Web Application, Prototype",
-    thumbnail: "",
-    studio: "Personal Project",
-    platform: "Web Browser",
-    projectLength: "Ongoing",
     brief: "",
     sections: [],
     skills: ["NextJS", "React", "Supabase"],

@@ -19,6 +19,7 @@ import {
   SiTypescript,
   SiJest,
   SiNextdotjs,
+  SiBlender,
 } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import { BsUnity } from "react-icons/bs";
@@ -50,4 +51,5 @@ export const skillIcons = {
   Java: FaJava,
   Lua: SiLua,
   RobloxStudio: SiRobloxstudio,
+  Blender: SiBlender,
 };
