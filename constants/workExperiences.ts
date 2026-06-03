@@ -2,7 +2,7 @@ export const softwareEngineerExp = [
    {
     title: "Software Engineer",
     company: "Samsung Research Institute Indonesia",
-    companyLogo: "/images/logos/shopee.jpg",
+    companyLogo: "/images/logos/samsungrndindonesia_logo.jpg",
     period: "Jakarta, Sep 2025 - Apr 2026",
     description: [
       {
