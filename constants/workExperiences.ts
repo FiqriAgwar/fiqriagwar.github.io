@@ -1,9 +1,25 @@
 export const softwareEngineerExp = [
+   {
+    title: "Software Engineer",
+    company: "Samsung Research Institute Indonesia",
+    companyLogo: "/images/logos/shopee.jpg",
+    period: "Jakarta, Sep 2025 - Apr 2026",
+    description: [
+      {
+        text: "Worked on VXT Player",
+        subitems: [
+          "Maintaining VXT Player, fixing bugs that happened in each device type. From Tizen to Android.",
+          "Participated in making unit test for VXT Widget and cover 98% of the repository",
+          "Joined the company as Pro certified"
+        ],
+      },
+    ],
+  },
   {
     title: "Software Engineer",
     company: "Shopee",
     companyLogo: "/images/logos/shopee.jpg",
-    period: "Jakarta, Jan 2022 - Present",
+    period: "Jakarta, Jan 2022 - Jun 2025",
     description: [
       {
         text: "Worked on Shopee Bubble Game",
